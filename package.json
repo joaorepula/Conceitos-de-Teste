@@ -1,0 +1,22 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --injectGlobals false --runInBand test/",
+    "test:dev": "NODE_OPTIONS=--experimental-vm-modules npx jest --injectGlobals false --runInBand test/ --watchAll test/",
+    "test:debbug": "node --experimental-vm-modules --inspect-brk node_modules/.bin/jest --injectGlobals false --runInBand --watchAll test/"
+  },
+  "keywords": [],
+  "author": "João",
+  "license": "ISC",
+  "engines": {
+    "node": "21.7.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
